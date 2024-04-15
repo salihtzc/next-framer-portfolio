@@ -80,24 +80,24 @@ export const Socials = [
 ];
 export const Projects = [
     {
-        title: "Modern Nextjs Website",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        title: "Restaurant Website",
+        text: "A frontend project I did to learn how to make a CSS responsive card system.",
         src: "/restaurantWebsite.png",
     },
     {
-        title: "Movie App with React",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-        src: "/movieApp.png",
+        title: "Pokemon App",
+        text: "A simple website project I did to learn Progressive Web Apps.",
+        src: "/pokemonApp.png",
     },
     {
-        title: "Modern Nextjs Portfolio",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        title: "Bootstrap Portfolio",
+        text: "This is the old version of my portfolio. I made it to learn Bootstrap.",
         src: "/OldPortfolio.png",
     },
     {
-        title: "Matrix themed Website",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-        src: "/WebPortfolio.png",
+        title: "Movie App",
+        text: "A React project I did to learn Firebase Authentication and Firestore.",
+        src: "/movieApp.png",
     },
 ];
 
