@@ -17,15 +17,16 @@ export default function About() {
 
     return (
         <motion.section
-            className="flex flex-col justify-center items-center h-screen scroll-mt-28"
+            className="flex flex-col justify-center items-center h-screen scroll-mt-28 bg-slate-900"
             variants={sectionVariants}
             initial="hidden"
             animate="visible"
             exit="exit"
             id="about"
+
         >
-            <h1 className="text-3xl font-bold text-gray-800 mb-6">About me</h1>
-            <div className="max-w-[45rem] text-center leading-8">
+            <h1 className="text-3xl font-bold text-slate-300 mb-6">About me</h1>
+            <div className="max-w-[45rem] text-center text-slate-300 leading-8">
                 <motion.p
                     className="mb-5"
                     initial={{ opacity: 0 }}
