@@ -82,12 +82,12 @@ export const Projects = [
     {
         title: "Modern Nextjs Website",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-        src: "/WebPortfolio.png",
+        src: "/restaurantWebsite.png",
     },
     {
-        title: "Space Themed Website",
+        title: "Movie App with React",
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-        src: "/WebPortfolio.png",
+        src: "/movieApp.png",
     },
     {
         title: "Modern Nextjs Portfolio",
