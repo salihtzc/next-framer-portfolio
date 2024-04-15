@@ -106,7 +106,7 @@ export default function Home() {
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
                               {" "}
                               Jr. Frontend Developer
-                                Salih Tuzcu
+                                Mehmet Salih Tuzcu
                             </span>
                         </h1>
 
@@ -121,7 +121,7 @@ export default function Home() {
                             className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
                         >
                             <Link
-                                href="#contact"
+                                href="/contact-me"
                                 className="group bg-purple-600 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-blue-700 active:scale-105 transition"
                                 style={{ minWidth: '200px', flexShrink: 0 }}
                             >
