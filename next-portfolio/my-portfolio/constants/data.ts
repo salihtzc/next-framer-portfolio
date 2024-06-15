@@ -138,5 +138,17 @@ export const skills = [
         icon: "/next.png",
         description: 'Using Next.js, I develop server-side rendered and statically generated sites. I optimize my React applications for better performance.'
 
+    },
+    {
+        id: 5,
+        name: 'Python & Django',
+        icon: "/python.png",
+        description: 'With Python and Django, I build robust and scalable backend systems. I implement secure and maintainable web applications.'
+    },
+    {
+        id: 6,
+        name: 'Java & Spring',
+        icon: "/spring.png",
+        description: 'With Java and Spring, I develop enterprise-level applications with high performance.'
     }
 ]
