@@ -66,21 +66,25 @@ export const SkillData = [
 
 export const Projects = [
     {
+        id : 1,
         title: "Restaurant Website",
         text: "A frontend project I did to learn how to make a CSS responsive card system.",
         src: "/restaurantWebsite.png",
     },
     {
+        id: 2,
         title: "Pokemon App",
         text: "A simple website project I did to learn Progressive Web Apps.",
         src: "/pokemonApp.png",
     },
     {
+        id: 3,
         title: "Bootstrap Portfolio",
         text: "This is the old version of my portfolio. I made it to learn Bootstrap.",
         src: "/OldPortfolio.png",
     },
     {
+        id: 4,
         title: "Movie App",
         text: "A React project I did to learn Firebase Authentication and Firestore.",
         src: "/movieApp.png",
