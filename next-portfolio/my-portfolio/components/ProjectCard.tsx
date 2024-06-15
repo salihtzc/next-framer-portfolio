@@ -25,7 +25,8 @@ export default function ProjectCard({image, title, text}: Props) {
             className="flip-card-inner w-full h-full"
             initial={false}
             animate={{rotateY: isFlipped ? 180 : 360}}
-            transition={{duration: 0.6, animationDirection: 'normal'}}
+            whileHover={{ scale: 1.05 }}
+            transition={{duration: 0.2}}
             onAnimationComplete={() => setIsAnimating(false)}
             >
                 <div
