@@ -50,7 +50,7 @@ export default function Page() {
         };
     };
 
-    const getAnimationDirection = (index) => {
+    const getAnimationDirection = (index: number | string) => {
         switch (index) {
             case 0:
                 return 'upright';
