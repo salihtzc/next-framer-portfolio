@@ -6,26 +6,52 @@ import { SkillData } from "@/constants/data";
 import Image from "next/image";
 import { Autoplay } from "swiper/modules";
 import { motion } from 'framer-motion';
-import { Progress } from "@/components/ui/progress"
-import {skills} from '@/constants/data';
+import { skills } from '@/constants/data';
 
-// Circular ProgressBar bileşeni
+// fadeIn fonksiyonu
+const fadeIn = (direction = 'down', delay = 0.3) => {
+    let xValue = 0;
+    let yValue = 0;
 
-// Page bileşeni
-const Page = () => {
+    switch (direction) {
+        case 'down':
+            yValue = 50;
+            break;
+        case 'up':
+            yValue = -50;
+            break;
+        case 'left':
+            xValue = -50;
+            break;
+        case 'right':
+            xValue = 50;
+            break;
 
-    const itemVariants = {
-        hidden: { opacity: 0, y: 50 },
-        visible: {
+        default:
+            xValue = 0;
+    }
+
+    return {
+        hidden: {
+            opacity: 0,
+            x: xValue,
+            y: yValue
+        },
+        show: {
             opacity: 1,
+            x: 0,
             y: 0,
             transition: {
-                type: 'spring',
-                stiffness: 50,
-                damping: 20
+                duration: 0.6,
+                delay: delay,
+                ease: 'easeInOut'
             }
         }
     };
+};
+
+// Page bileşeni
+const Page = () => {
 
     return (
         <div className="h-screen w-screen flex items-center justify-center bg-cover bg-center bg-slate-900 relative">
@@ -81,15 +107,14 @@ const Page = () => {
                 </Swiper>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-10 ">
-                {skills.map((skill) => (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-10">
+                {skills.map((skill, index) => (
                     <motion.div
                         key={skill.id}
                         className="overflow-hidden shadow-lg p-6 bg-white border border-black/[0.1] rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80 w-full max-w-xs mx-auto"
-                        variants={itemVariants}
+                        variants={index < 3 ? fadeIn('up', index * 0.2) : fadeIn('down', (index - 3) * 0.2)}
                         initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, amount: 0.5 }}
+                        animate="show"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
