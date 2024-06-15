@@ -111,7 +111,7 @@ const Page = () => {
                 {skills.map((skill, index) => (
                     <motion.div
                         key={skill.id}
-                        className="overflow-hidden shadow-lg p-6 bg-white border border-black/[0.1] rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80 w-full max-w-xs mx-auto"
+                        className="overflow-hidden shadow-lg p-6  border border-black/[0.1] rounded-xl px-5 py-3 bg-white/10 text-white/80 w-full max-w-xs mx-auto"
                         variants={index < 3 ? fadeIn('up', index * 0.2) : fadeIn('down', (index - 3) * 0.2)}
                         initial="hidden"
                         animate="show"
@@ -127,7 +127,7 @@ const Page = () => {
                                 className="mx-auto mb-4"
                             />
                             <h4 className="text-2xl font-semibold mt-2 mb-4">{skill.name}</h4>
-                            <p className="text-gray-700 dark:text-gray-300">
+                            <p className="text-gray-300">
                                 {skill.description}
                             </p>
                         </div>
