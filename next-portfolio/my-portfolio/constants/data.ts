@@ -4,63 +4,63 @@ export const SkillData = [
     {
         name: "Html 5",
         Image: "/html.png",
-        width: 80,
-        height: 80,
+        width: 50,
+        height: 50,
     },
     {
         name: "Css",
         Image: "/css.png",
-        width: 80,
-        height: 80,
+        width: 60,
+        height: 60,
     },
     {
         name: "JavaScript",
         Image: "/js.png",
-        width: 65,
-        height: 65,
+        width: 50,
+        height: 50,
     },
     {
         name: "Tailwind Css",
         Image: "/tailwind.png",
-        width: 80,
-        height: 80,
+        width: 50,
+        height: 50,
     },
     {
         name: "React",
         Image: "/react.png",
-        width: 80,
-        height: 80,
+        width: 50,
+        height: 50,
     },
 
     {
         name: "TypeScript",
         Image: "/ts.png",
-        width: 80,
-        height: 80,
+        width: 50,
+        height: 50,
     },
     {
         name: "Next js ",
         Image: "/next.png",
-        width: 80,
-        height: 80,
+        width: 50,
+        height: 50,
     },
     {
         name: "Framer Motion",
         Image: "/framer.png",
-        width: 80,
-        height: 80,
+        width: 50,
+        height: 50,
     },
     {
         name: "Node js",
         Image: "/node-js.png",
-        width: 80,
-        height: 80,
+        width: 50,
+        height: 50,
     },
     {
         name: "Mongo db",
         Image: "/mongodb.png",
-        width: 40,
-        height: 40,
+        width: 35,
+        height: 50,
     },
 ];
 
@@ -109,3 +109,34 @@ export const NavLinks = [
         link: "/contact-me",
     },
 ];
+
+export const skills = [
+    {
+        id: 1,
+        name: 'HTML & CSS',
+        icon: "/html.png",
+        description: 'Using HTML and CSS, I create modern and responsive web pages. These skills allow me to build the foundational elements of web design.'
+
+    },
+    {
+        id: 2,
+        name: 'Javascript',
+        icon: "/js.png",
+        description: 'With JavaScript, I develop interactive and dynamic web pages. I specialize in DOM manipulation and event handling.'
+
+
+    },
+    {   id: 3,
+        name: 'React',
+        icon: "/react.png",
+        description: 'I build high-performance and user-friendly interfaces with React. I have deep knowledge of components, state management, and hooks.'
+
+    },
+    {
+        id: 4,
+        name: 'Next.js',
+        icon: "/next.png",
+        description: 'Using Next.js, I develop server-side rendered and statically generated sites. I optimize my React applications for better performance.'
+
+    }
+]
