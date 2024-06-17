@@ -17,7 +17,7 @@ export default function About() {
 
     return (
         <motion.section
-            className="flex flex-col justify-center items-center h-screen scroll-mt-28 bg-slate-900"
+            className="flex flex-col justify-center items-center h-screen scroll-mt-28 bg-slate-900 px-4"
             variants={sectionVariants}
             initial="hidden"
             animate="visible"
@@ -25,7 +25,7 @@ export default function About() {
             id="about"
 
         >
-            <h1 className="text-3xl font-bold text-slate-300 mb-6">About me</h1>
+            <h1 className="text-3xl font-bold text-slate-300 mb-6 text-center lg:text-left">About me</h1>
             <div className="max-w-[45rem] text-center text-slate-300 leading-8">
                 <motion.p
                     className="mb-5"
