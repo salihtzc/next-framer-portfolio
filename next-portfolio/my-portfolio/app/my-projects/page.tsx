@@ -71,7 +71,7 @@ export default function Page() {
                 initial='hidden'
                 animate='show'
                 viewport={{ once: false, amount: 0.1 }}
-                className="grid grid-cols-2 gap-5 max-w-[90%] max-h-[90%] mb-5">
+                className="grid grid-cols-1 sm:grid-cols-2 gap-5 max-w-[90%] max-h-[90%] mb-5">
                 {Projects.map((project, index) => (
                     <motion.div
                         key={index}
