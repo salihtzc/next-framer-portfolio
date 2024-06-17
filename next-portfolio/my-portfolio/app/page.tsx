@@ -34,15 +34,15 @@ export default function Home() {
     return (
         <>
             <main className="w-screen h-screen relative">
-                <div className="flex items-center justify-between w-full h-full bg-cover bg-center bg-slate-900 ">
-                    <div className="col-span-8 pl-20 md:pl-40 md:pb-20 flex flex-col gap-5 z-[10] max-w-[750px]" >
+                <div className="flex flex-col lg:flex-row items-center justify-between w-full h-full bg-cover bg-center bg-slate-900 p-5 lg:p-0">
+                    <div className="flex flex-col items-center lg:items-start gap-5 z-[10] max-w-[750px] p-5 lg:pl-20 lg:pr-10 lg:pb-20">
 
-                        <motion.h1
+                    <motion.h1
                             variants={fadeIn('down', 0.2)}
                             initial='hidden'
                             whileInView={'show'}
                             viewport={{once:false,amount:0.4}}
-                            className="text-[50px] text-white font-semibold">
+                            className="text-[36px] lg:text-[50px] text-white font-semibold text-center lg:text-left">
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
                               {" "}
                               Jr. Frontend Developer
@@ -56,7 +56,7 @@ export default function Home() {
                             whileInView={'show'}
                             viewport={{once:false,amount:0.4}}
 
-                            className="text-gray-200 hidden md:block">
+                            className="text-gray-200 text-center lg:text-left hidden md:block">
                             Web Development student at Thomas More University of Applied Sciences in Antwerp, Belgium
 
                         </motion.p>
